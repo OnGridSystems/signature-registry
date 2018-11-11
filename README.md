@@ -8,7 +8,11 @@
 [coveralls-image]: https://coveralls.io/repos/github/parity-contracts/signature-registry/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/parity-contracts/signature-registry?branch=master
 
-Decentralised registry of 4-bytes signatures to method mappings
+Decentralized registry of 4-bytes signatures to method mappings
+
+## Deployments
+
+- Mainnet: [`0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86`](https://etherscan.io/address/0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86)
 
 ## Getting started
 
