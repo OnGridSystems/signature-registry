@@ -24,3 +24,10 @@ To run the test suite:
 ```
 yarn test
 ```
+
+## Usage
+
+A truffle script can be used to register many function signatures to the mainnet registry:
+```
+npx truffle exec --network mainnet scripts/register-many.js "a()" "b(uint256)" ...
+```

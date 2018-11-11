@@ -22,6 +22,7 @@
     "parity": "parity --chain dev --jsonrpc-port 7545 --jsonrpc-apis all"
   },
   "devDependencies": {
+    "@aragon/os": "^4.0.1",
     "coveralls": "^3.0.0",
     "ganache-cli": "^6.1.0",
     "solidity-coverage": "^0.5.0",
