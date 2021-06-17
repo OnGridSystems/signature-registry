@@ -12,7 +12,18 @@ Decentralized registry of 4-bytes signatures to method mappings
 
 ## Deployments
 
-- Mainnet: [`0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86`](https://etherscan.io/address/0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86)
+- BSC mainnet: [`add address`](Add link)
+
+## Requirements
+
+node version 10
+
+```
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+source ~/.bashrc
+nvm install 10
+nvm use --delete-prefix 10
+```
 
 ## Getting started
 
@@ -29,9 +40,19 @@ To run the test suite:
 yarn test
 ```
 
+To deploy
+
+```
+export RPC_UPSTREAM=<http node address>
+export MNEMONIC=<mnemonic>
+yarn migrate
+```
+
 ## Usage
 
 A truffle script can be used to register many function signatures to the mainnet registry:
 ```
-npx truffle exec --network mainnet scripts/register-many.js "a()" "b(uint256)" ...
+export ADDRESS_SIGNATUREREG=<contract address>
+
+npx truffle exec scripts/register-many.js "add(uint256,address,bool)" "addStage(uint256,uint256,uint256,uint256)" "deposit(uint256,uint256)" "emergencyWithdraw(uint256)" "massUpdatePools()" "migrate(uint256)" "renounceOwnership()" "set(uint256,uint256,bool)" "setDevAddr(address)" "setDevFee(uint256)" "setMigrator(address)" "transferOwnership(address)" "updatePool(uint256)" "withdraw(uint256,uint256)"
 ```
