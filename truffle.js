@@ -4,7 +4,7 @@ module.exports = {
     networks: {
       development: {
         provider: function() {
-            return new HDWalletProvider(mnemonic, "https://data-seed-prebsc-1-s1.binance.org:8545/");
+            return new HDWalletProvider(mnemonic, process.env.RPC_UPSTREAM);
         },
         network_id: 97 // Match any network id
       }
