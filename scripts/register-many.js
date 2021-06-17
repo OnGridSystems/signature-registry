@@ -11,9 +11,9 @@ const getNonce = () => new Promise((resolve, reject) => {
 })
 
 module.exports = async (callback) => {
-  const sigs = process.argv.slice(6)
+  const sigs = process.argv.slice(4)
   const SignatureReg = artifacts.require('SignatureReg')
-  const reg = SignatureReg.at('0x44691B39d1a75dC4E0A0346CBB15E310e6ED1E86')
+  const reg = SignatureReg.at('0x5e03b8a3b019d8d2745660c9ad77a6d0b2505cab')
 
   const register = async (sig, nonce) => {
     console.log('registering', sig, 'nonce', nonce)
